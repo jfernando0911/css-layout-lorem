@@ -1,10 +1,57 @@
-div {
-  border: 1px solid black;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 40% 40% 1fr;
+  grid-template-rows: 10vh 40vh 40vh 40vh 20vh 10vh;
+}
+.container .header {
+  grid-column: 1/5;
+  border: 1px solid black;
+}
+.container .header .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.container .header .navbar .logo {
+  margin: 0;
+  padding: 15px;
+}
+.container .header .navbar .navul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+.container .header .navbar .navul li {
+  padding: 15px;
+}
+.container .mainContent {
+  border: 1px solid black;
+  grid-column: 2/4;
+}
+.container .section1 {
+  grid-column: 2/4;
+  border: 1px solid black;
+}
+.container .section2 {
+  grid-column: 2/4;
+  border: 1px solid black;
+}
+.container .section3 {
+  grid-column: 2/4;
+  border: 1px solid black;
+}
+.container .footer {
+  grid-column: 1/5;
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */
