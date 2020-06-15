@@ -35,14 +35,15 @@ body {
   height: auto;
 }
 .container .header .navbar .navul li {
-  padding: 15px;
-  border: 1px solid dimgrey;
+  padding: 10px;
   margin-right: 2px;
-  border-radius: 20px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  border-bottom: 5px solid transparent;
+  background-color: #ffffff;
+  transition: 1s;
 }
 .container .header .navbar .navul li:hover {
   background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 5px solid black;
 }
 .container .mainContent {
   border-bottom: 1px solid black;
