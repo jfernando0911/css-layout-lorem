@@ -11,7 +11,7 @@ body
 .container
     display: grid
     grid-template-columns: 1fr 40% 40% 1fr
-    grid-template-rows: 20vh 40vh 40vh 40vh 20vh 10vh
+    grid-template-rows: 20vh auto 40vh 40vh 20vh 10vh
     
 
     // div 
@@ -51,18 +51,27 @@ body
                                  
     .mainContent
         border-bottom: 1px solid black
-
+        p
+            padding: 15px
         grid-column: 2/4
     .section1
+        p
+            padding: 15px
         grid-column: 2/4
     .section2
+        p
+            padding: 15px
         grid-column: 2/4
         border-bottom: 1px solid black
     .section3
+        p
+            padding: 15px
         grid-column: 2/4
         
     .footer
-        grid-column: 1/5
+        grid-column: 2/4
+        padding: 16px
         border-radius: 12px
+        border-top: dashed 3px black
     @media only screen and (max-width: 600px)
         grid-template-rows: 20vh auto auto auto auto auto //now the height of the rows autoadjust

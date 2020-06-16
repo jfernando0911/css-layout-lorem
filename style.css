@@ -6,7 +6,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 40% 40% 1fr;
-  grid-template-rows: 20vh 40vh 40vh 40vh 20vh 10vh;
+  grid-template-rows: 20vh auto 40vh 40vh 20vh 10vh;
 }
 .container .header {
   grid-column: 1/5;
@@ -49,19 +49,33 @@ body {
   border-bottom: 1px solid black;
   grid-column: 2/4;
 }
+.container .mainContent p {
+  padding: 15px;
+}
 .container .section1 {
   grid-column: 2/4;
+}
+.container .section1 p {
+  padding: 15px;
 }
 .container .section2 {
   grid-column: 2/4;
   border-bottom: 1px solid black;
 }
+.container .section2 p {
+  padding: 15px;
+}
 .container .section3 {
   grid-column: 2/4;
 }
+.container .section3 p {
+  padding: 15px;
+}
 .container .footer {
-  grid-column: 1/5;
+  grid-column: 2/4;
+  padding: 16px;
   border-radius: 12px;
+  border-top: dashed 3px black;
 }
 @media only screen and (max-width: 600px) {
   .container {
