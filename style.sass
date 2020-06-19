@@ -13,7 +13,7 @@ body
     grid-template-columns: 1fr 40% 40% 1fr
     grid-template-rows: 20vh auto auto auto auto 10vh
     
-
+    
     // div 
     .header
         grid-column: 1/5
@@ -30,6 +30,9 @@ body
             .logo
                 margin: 0
                 padding: 15px
+                &:hover
+                    animation: logoRotation 1s infinite
+                
 
             .navul
                 display: flex
@@ -53,19 +56,28 @@ body
         border-bottom: 1px solid black
         p
             padding: 15px
+        &:hover
+            animation: colorful 5s infinite    
         grid-column: 2/4
     .section1
+        border-bottom: 1px solid black
         p
             padding: 15px
+        &:hover
+            animation: colorful 5s infinite    
         grid-column: 2/4
     .section2
         p
             padding: 15px
+        &:hover
+            animation: colorful 5s infinite    
         grid-column: 2/4
         border-bottom: 1px solid black
     .section3
         p
             padding: 15px
+        &:hover
+            animation: colorful 5s infinite    
         grid-column: 2/4
         
     .footer
@@ -75,3 +87,21 @@ body
         border-top: dashed 3px black
     @media only screen and (max-width: 600px)
         grid-template-rows: 20vh auto auto auto auto auto //now the height of the rows autoadjust
+    @keyframes colorful
+        0%
+            background-color: CornflowerBlue
+        25%
+            background-color: Cyan    
+        50%    
+            background-color: Yellow
+        75%        
+            background-color: Red
+        100%
+            background-color: green
+    @keyframes logoRotation
+        0%
+            transform: rotate(0deg)    
+        50%
+            transform: rotate(180deg)
+        100%
+            transform: rotate(360deg)
